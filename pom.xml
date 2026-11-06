@@ -17,18 +17,8 @@
     <dependencies>
         <dependency>
             <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j</artifactId>
-            <version>0.36.2</version>
-        </dependency>
-        <dependency>
-            <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j-core</artifactId>
-            <version>0.36.2</version>
-        </dependency>
-        <dependency>
-            <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j-google-ai-gemini</artifactId>
-            <version>0.36.2</version>
+            <artifactId>langchain4j-google-genai</artifactId>
+            <version>1.23.0-beta33</version>
         </dependency>
     </dependencies>
 </project>
