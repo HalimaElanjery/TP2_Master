@@ -28,8 +28,8 @@ public class MeteoTool {
             @P(value="Nombre de jours de la période", name="nbJours") int nbJours) {
         // Seuil au-delà duquel la probabilité d'avoir de la pluie est suffisante pour prendre un parapluie.
         // A modifier éventuellement, en particulier pour faire des tests.
+        double seuilPluie = 25.0;
 
-        double seuilPluie = 1.0;   // temporaire, pour le test
 
         try {
             // Construire l'URL de l'API météo en utilisant les coordonnées et la période spécifiée
@@ -62,7 +62,7 @@ public class MeteoTool {
             Gson gson = new Gson();
             JsonObject jsonResponse = gson.fromJson(response, JsonObject.class);
 
-//            System.out.println("Réponse de l'API météo : " + response);
+            //System.out.println("Réponse de l'API météo : " + response);
 
             // Extraire le tableau precipitation_probability_max
             JsonObject daily = jsonResponse.getAsJsonObject("daily");
