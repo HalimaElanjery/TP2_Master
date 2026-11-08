@@ -49,3 +49,7 @@ public class Test4Embeddings {
         return CosineSimilarity.between(e1, e2);
     }
 }
+/**
+ * Test 4 : calcul de la similarité cosinus entre des couples de phrases,
+ * avec le modèle intégré BGE puis avec le modèle Google (gemini-embedding-001).
+ */
